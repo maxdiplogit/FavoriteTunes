@@ -1,0 +1,7 @@
+<h1>Song List</h1>
+
+<ul>
+    {% for song in songs %}
+        <li><a href="{% url 'song_detail' song_id=song.id %}">{{ song.title }}</a></li>
+    {% endfor %}
+</ul>
