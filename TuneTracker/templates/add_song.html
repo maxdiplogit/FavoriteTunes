@@ -1,0 +1,33 @@
+{% extends "master.html" %}
+
+{% load static %}
+
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'form.css' %}">
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static 'form.js' %}"></script>
+{% endblock %}
+
+
+{% block content %}
+<div class="song_form">
+    <h1>Add Song</h1>
+    <form method="post" action="{% url 'add_song' %}">
+        {% csrf_token %}
+        <div class="song_input">
+            <input type="text" id="song" name="song" required placeholder="Song">
+        </div>
+        <div class="artist_input">
+            <input type="text" id="artist" name="artist" required placeholder="Artist">
+        </div>
+        <div class="submit_button">
+            <button type="submit">
+                Done
+            </button>
+        </div>
+    </form>
+</div>
+{% endblock %}

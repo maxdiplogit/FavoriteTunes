@@ -1,5 +1,24 @@
-<h1>{{ song.title }}</h1>
+{% extends "master.html" %}
 
-<p>
-    Artist: {{ song.artist.name }}
-</p>
+{% load static %}
+
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'song.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <div class="song_detail">
+        <h1>{{ song.title }}</h1>
+
+        <p>
+            Artist: {{ song.artist.name }}
+        </p>
+
+        <form method="post" action="{% url 'del_song' song_id=song.id %}">
+            {% csrf_token %}
+            <button type=submit>Delete</button>
+        </form>
+    </div>
+{% endblock %}

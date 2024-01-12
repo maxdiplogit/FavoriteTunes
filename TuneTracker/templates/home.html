@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% load static %}
+
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<div class="home">
+    <a href="{% url 'song_list' %}">
+        TuneTracker &#119083;
+    </a>
+</div>
+{% endblock %}

@@ -30,6 +30,10 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+STATIC_ROOT = BASE_DIR / 'productionfiles'
+
+STATICFILES_DIRS = [BASE_DIR / 'static']
+
 INSTALLED_APPS = [
     "TuneTracker",
     "django.contrib.admin",
