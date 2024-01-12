@@ -1,0 +1,20 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home a {
+    font-size: 60px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.home a:hover {
+    transition: ease-in-out 0.2s;
+    color: rgba(76, 206, 211, 0.596);
+}

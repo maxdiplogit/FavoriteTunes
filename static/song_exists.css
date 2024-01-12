@@ -1,0 +1,26 @@
+.song_existent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.song_existent a {
+    padding: 14px;
+    margin: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgba(95, 158, 160, 0.884);
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(184, 215, 242);
+}
+
+.song_existent a:hover {
+    transition: ease-in-out 0.2s;
+    background-color: rgba(111, 202, 206, 0.926);
+    color: aliceblue;
+}

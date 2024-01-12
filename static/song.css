@@ -1,0 +1,38 @@
+.song_detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(78, 78, 95, 0.4);
+    margin: 25%;
+    margin-top: 13%;
+    height: 290px;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+.song_detail h1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.song_detail p {
+    color: rgba(240, 248, 255, 0.516);
+}
+
+.song_detail form button{
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 47, 47, 0.541);
+    color: rgb(184, 215, 242);
+    margin-top: 30px;
+}
+
+.song_detail form button:hover {
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    background-color: rgba(255, 47, 47, 0.84);
+    color: aliceblue;
+}

@@ -1,0 +1,107 @@
+.song_form {
+    color: aliceblue;
+    background-color: rgba(78, 78, 95, 0.4);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20%;
+    margin-left: 18%;
+    border-radius: 10px;
+}
+
+.song_form h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.song_form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.song_form form .song_input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.song_form form .artist_input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.song_form form .song_input input {
+    width: 100%;
+    border: none;
+    margin: 100px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-bottom: 6px;
+    font-size: 1rem;
+    text-align: center;
+    background-color: rgba(78, 78, 95, 0);
+    color: rgba(11, 149, 103, 0.855);
+    border: none;
+    border-bottom: 1px solid rgba(130, 162, 238, 0.708);
+    outline: none;
+}
+
+.song_form form .song_input input:focus {
+    border-bottom: 1px solid rgb(13, 172, 119);
+    color: rgb(13, 172, 119);
+}
+
+.song_form form .artist_input input {
+    width: 100%;
+    border: none;
+    margin: 100px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    background-color: rgba(78, 78, 95, 0);
+    color: rgba(11, 149, 103, 0.855);
+    border: none;
+    border-bottom: 1px solid rgba(130, 162, 238, 0.708);
+    outline: none;
+}
+
+.song_form form .artist_input input:focus {
+    border-bottom: 1px solid rgb(13, 172, 119);
+    color: rgb(13, 172, 119);
+}
+
+.song_form form .submit_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+.song_form form .submit_button button {
+    width: 12%;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(95, 158, 160, 0.884);
+    color: rgb(184, 215, 242);
+}
+
+.song_form form .submit_button button:hover {
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    background-color: rgba(111, 202, 206, 0.926);
+    color: aliceblue;
+}
