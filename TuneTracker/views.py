@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-import hashlib
+import colorsys
+import random
 
 # Models
 from .models import Song, Artist
@@ -52,7 +53,14 @@ def add_song(request):
                 new_song = Song(title = song_name, artist = artist)
                 new_song.save()
         except Artist.DoesNotExist or (artist is None):
-            color = '#' + hashlib.md5(artist_name.encode('utf-8')).hexdigest()[:6]
+            hue = random.random()
+            saturation = random.uniform(0.3, 0.7)
+            value = random.uniform(0.3, 0.7) 
+            
+            r, g, b = colorsys.hsv_to_rgb(hue, saturation, value)
+            
+            color = "#{:02X}{:02X}{:02X}".format(int(r * 255), int(g * 255), int(b * 255))
+            
             new_artist = Artist(name = artist_name, color = color)
             new_artist.save()
             new_song = Song(title = song_name, artist = new_artist)
